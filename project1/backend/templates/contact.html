@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Layout Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🏗️ AI Layout Planner</div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/planner" class="nav-link">Planner</a></li>
+                <li><a href="/contact" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p class="subtitle">Have questions? We'd love to hear from you!</p>
+
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>info@ailayoutplanner.com</p>
+                        <p>support@ailayoutplanner.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <p>+1 (555) 987-6543</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>AI Tech Building</p>
+                        <p>123 Innovation Street</p>
+                        <p>Tech City, TC 12345</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>⏰ Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🌐 Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h3>How accurate is the AI layout generation?</h3>
+                        <p>
+                            Our AI uses statistical analysis and best practices in urban planning to generate 
+                            recommendations. The layouts are based on proven urban planning principles adapted to your 
+                            specific inputs. Results should be used as a starting point for detailed planning, not as final designs.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can I export the generated layout?</h3>
+                        <p>
+                            Currently, layouts can be viewed and captured. We're working on exporting options for CAD, PDF, 
+                            and other professional formats in future versions.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What data formats can I use for input?</h3>
+                        <p>
+                            Our system accepts standard numerical inputs for population and temperature. Weather conditions 
+                            and road infrastructure are selected from predefined categories for consistency and accuracy.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is my data secure?</h3>
+                        <p>
+                            We take data security seriously. All inputs are processed on our secure servers and are not 
+                            stored permanently unless you specifically choose to save projects. Review our privacy policy for more details.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can I use this for commercial projects?</h3>
+                        <p>
+                            Yes! We offer commercial licenses for businesses and government agencies. Contact our enterprise team for pricing and features.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How long does it take to generate a layout?</h3>
+                        <p>
+                            Most layouts are generated within 5-10 seconds. Complex analysis with large populations may take up to 30 seconds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 AI Layout Planner. Designing smarter cities with technology.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='contact.js') }}"></script>
+</body>
+</html>
